@@ -5,4 +5,4 @@ EXPOSE 80
 COPY ./web/ /usr/share/nginx/html
 
 
-ENTRYPOINT [nginx-debug, '-g', 'daemon off;']
+ENTRYPOINT ["nginx-debug", '-g', 'daemon off;']
