@@ -1,8 +1,5 @@
-FROM nginx:1.21.6
-
-EXPOSE 80
+FROM nginx
 
 COPY ./web/ /usr/share/nginx/html
 
-
-CMD ["nginx-debug", '-g', 'daemon off;']
+CMD ["nginx-debug", "-g", "daemon off;"]
