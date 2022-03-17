@@ -5,15 +5,20 @@ metadata:
   namespace: default
 spec:
   hosts: ["app.<DOMAIN>"]
+  #hosts: ["app.thindexed.personal.shoot.canary.k8s-hana.ondemand.com"]
   gateways: [ "gateway-app" ]
   http:
     - match:
       - uri:
-          prefix: "/permissions"
+          regex: "/permissions.+"
+      redirect:
+        uri: "/permissions"
+    - match:
+      - uri:
+          exact: "/permissions"
       rewrite:
-        uri: "/"
+        uri: "/permissions.json"
       route:
         - destination:
             host: permissions
-
 
