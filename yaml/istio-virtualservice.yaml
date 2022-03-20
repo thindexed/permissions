@@ -17,7 +17,7 @@ spec:
       - uri:
           exact: "/permissions"
       rewrite:
-        uri: "/permissions.json"
+        uri: "/permissions-anonym.json"
       route:
         - destination:
             host: permissions
