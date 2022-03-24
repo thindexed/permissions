@@ -13,7 +13,8 @@ data_user = json.loads(pathlib.Path(__file__).parent.joinpath('permissions-user.
 
 @app.route('/permissions')
 def permissions():
-    role = request.headers.get('your-header-name')        
+    role = request.headers.get('your-header-name')   
+    print("role:", role)     
     if role == "user":
         return jsonify(data_user)
 
