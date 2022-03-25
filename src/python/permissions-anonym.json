@@ -1,6 +1,5 @@
 {
   "featureset": {
-    "authentication": true,
     "share": true,
     "simulator": true,
     "designer": true,
