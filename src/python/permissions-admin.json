@@ -27,11 +27,11 @@
     }
   },
   "shapes": {
-    "create": false,
-    "update": false,
-    "delete": false,
-    "read": false,
-    "list": false,
+    "create": true,
+    "update": true,
+    "delete": true,
+    "read": true,
+    "list": true,
     "global": {
       "create": true,
       "update": true,
