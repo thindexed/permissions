@@ -27,5 +27,3 @@ def permissions():
 if __name__ == '__main__':
     print("AuthZ Server Up and running")
     app.run(host='0.0.0.0', port=8080, debug=False, threaded=False)
-
-
