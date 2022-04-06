@@ -1,4 +1,5 @@
 {
+  "type": "anonym",
   "featureset": {
     "share": true,
     "simulator": true,

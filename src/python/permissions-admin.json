@@ -1,4 +1,5 @@
 {
+  "type": "admin",
   "featureset": {
     "share": true,
     "simulator": true,
