@@ -6,7 +6,7 @@
     "designer": true,
     "author": true,
     "usermanagement": false,
-    "records": true
+    "records": false
   },
   "updates": {
     "update": false,
